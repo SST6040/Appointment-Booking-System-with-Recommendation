@@ -1,2 +1,2 @@
-# Appointment-Booking-System-with-Recommendation
+# Counselling-Appointment-Booking-System-with-Recommendation
 This is a prototype that demonstrate an counselling appointment booking system with recommendation. Recommendation on best-matched counsellor, timeslot, mental health issue and consultation method are provided. The recommendation is generated based on user profile and user past behaviour. The project is a typescript project developed using Ionic framework. 
