@@ -1,0 +1,34 @@
+
+<ion-header>
+  <ion-toolbar class='profilepage'>
+    <ion-title>EDIT PROFILE</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="profile"></ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+  <form [formGroup]=newMethodForm>
+   
+    <ion-card >
+      <ion-item disabled>
+        Please select new method:
+      </ion-item>
+    
+      <ion-select id='reselectmethod' placeholder='You are more comfortable to communicate in:' formControlName='newMethod'>
+        <ion-select-option value='video-call'>Video-call</ion-select-option>
+        <ion-select-option value='voice-call'>Voice-call</ion-select-option>
+        <ion-select-option value='text-message'>Text-message</ion-select-option>
+        </ion-select>
+    </ion-card>
+
+    
+  </form>
+
+    <ion-button type="submit" expand='block' color=tertiary size='medium' (click)=' updateMethod()'>Update</ion-button>
+</ion-content>
+

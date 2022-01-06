@@ -1,0 +1,37 @@
+
+<ion-header>
+  <ion-toolbar class='profilepage'>
+    <ion-title>EDIT PROFILE</ion-title>
+
+    
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="profile"></ion-back-button>
+      </ion-buttons>
+
+ 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+  <form [formGroup]=newEthnForm>
+   
+    <ion-card >
+      <ion-item disabled>
+        Please select new ethnicity:
+      </ion-item>
+    
+      <ion-select id='reselectethnicity' placeholder='Select your ethnicity' formControlName='newEthn'>
+        <ion-select-option value='Chinese'>Chinese</ion-select-option>
+        <ion-select-option value='Malay'>Malay</ion-select-option>
+        <ion-select-option value='Indian'>Indian</ion-select-option>
+        <ion-select-option value='other'>Other</ion-select-option>
+      </ion-select>
+    </ion-card>
+
+    
+  </form>
+
+    <ion-button type="submit" expand='block' color=tertiary size='medium' (click)=' updateEthn()'>Update</ion-button>
+</ion-content>
+

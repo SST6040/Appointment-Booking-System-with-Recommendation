@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<ion-header [translucent]="true">
+  <ion-toolbar class='ion-toolbar1'>
+    <ion-title>
+      UTP PSYCHOLOGICAL AND COUNSELLING 
+    </ion-title>
+    <ion-buttons slot='end'>
+      <ion-button (click)='LogoutUser()'>
+        Logout
+      </ion-button>
+    </ion-buttons>
+
+    
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class=ion-padding>
+<br>
+
+<div >
+  <!-- <img class='imgdisplayed' height='flex' width='flex' src = 'https://utpmerchandise.com/image/cache/catalog/journal3/logo/utp-retina-logo-555-555x219.png'> -->
+
+  <img class='imgdisplayed' style="float: left;" height=45% width=45% src = 'https://utpmerchandise.com/image/cache/catalog/journal3/logo/utp-retina-logo-555-555x219.png'>
+
+  <br>
+<h1 style='text-align:left;justify-content: center;font-weight:900;font-size: 50px;margin-left: 40px;'>UCoun : UTP Counselling Appointment Booking System</h1>
+<h3 style='font-family:Segoe UI,Tahoma, Geneva, Verdana, sans-serif;font-style : normal;margin-left: 40px'>
+  Welcome to UCoun! Manage your information and appointment to make UCoun work better for you.
+</h3>
+<br>
+</div>
+
+<br>
+<br>
+  <div style="position:absolute;left: flex;">
+   <ion-grid>
+    <ion-row>
+      
+
+    <ion-col>
+      <ion-card class='profilecardcolor' (click)='GotoCounProfile()'>
+        <ion-item>
+          <img  src='./assets/Portfolio-update.jpg'>
+         </ion-item>   
+      <ion-card-header>
+        <ion-card-title>
+          <strong>Profile</strong>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <i>View your profile</i>
+      </ion-card-content>
+    </ion-card>
+    </ion-col>
+
+    <ion-col>
+      <ion-card class='historycardcolor'(click)='GotoAppt()'>
+        <ion-item>
+          <img height='flex' width='flex' src='./assets/counappointment.jpg'>
+        </ion-item>
+      <ion-card-header>
+        <ion-card-title >
+          <strong>Appointment</strong>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content >
+        <i style="color:black;">View your appointment</i>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+    </ion-row>
+  </ion-grid>
+    
+
+    
+  
+  </div>
+  
+</ion-content>

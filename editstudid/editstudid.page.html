@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar class='profilepage'>
+    <ion-title>EDIT PROFILE</ion-title>
+
+    <ion-buttons slot='start' (click)='GotoHome()'>
+      <ion-button style=color:white >
+        HOME
+      </ion-button>
+
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+ 
+  <form [formGroup]=newstudIDForm>
+   
+    <ion-card>
+      <ion-item>
+        <ion-item disabled>
+          Please entered the new student ID:
+        </ion-item>
+       
+        <input type=text id=restudID formControlName=newStudID>
+        
+      </ion-item>
+      
+    </ion-card>
+  </form>
+
+    <ion-button type="submit" expand='block' color=tertiary size='medium' (click)=' updateStudID()'>Update</ion-button>
+</ion-content>

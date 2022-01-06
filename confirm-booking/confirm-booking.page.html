@@ -1,0 +1,113 @@
+<ion-header>
+  <ion-toolbar class='bookingpage'>
+    <ion-title>BOOKING STEP 5 - CONIFRM YOUR BOOKING</ion-title>
+
+    <ion-buttons slot='start' (click)='GotoHome()'>
+      <ion-button >
+        HOME
+      </ion-button>
+
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]=true class=ion-padding>
+
+ 
+  <div style="margin-left:10px;float:right;width:700px;" >
+    <img class='imgdisplayed'  height=40% width=40% src = 'https://img.freepik.com/free-vector/confirmed-concept-illustration_114360-416.jpg?size=338&ext=jpg'>
+ <br>
+  
+          
+          <h1 style='text-align:left;justify-content: center;font-weight:900;font-size: 50px;'>Last step!</h1>
+          <h3 style='font-family:Segoe UI,Tahoma, Geneva, Verdana, sans-serif;font-style : normal;text-align: left;'>
+          Please check your booking details and confirm if you want to proceed:
+  
+          </h3>
+          <br>
+          <ion-button style=height:40px class="btn3" type="submit" expand='block'  style='color:primary' (click)='confirm()'>confirm</ion-button>
+          <br>
+          <ion-button style=height:40px class="cancelbtn" type="submit" expand='block'  (click)='cancel()'>cancel</ion-button>
+  </div>
+
+  <div class="ion-padding" style="float: left;width:950px;">
+    <ion-card>
+      <ion-card-title>
+        <strong>Counsellor Details</strong>
+      </ion-card-title>
+
+      <ion-item >
+      <ion-item id=cname></ion-item>
+        <!-- <ion-label ></ion-label> -->
+      </ion-item>
+  
+      <ion-item >
+        <ion-item id=cemail></ion-item>
+        <!-- <ion-label ></ion-label> -->
+      </ion-item>
+  
+      <ion-item >
+        <ion-item id=cgender></ion-item>
+        <!-- <ion-label ></ion-label> -->
+      </ion-item>
+  
+      <ion-item >
+        <ion-item id=cethn></ion-item>
+        <!-- <ion-label ></ion-label> -->
+      </ion-item>
+    
+  </ion-card>
+  
+  
+  
+    <ion-card>
+      <ion-card-title>
+        <strong>Date and Time</strong>
+      </ion-card-title>
+  
+    
+      <ion-item >
+        <ion-item id=disdate></ion-item>
+        <!-- <ion-label ></ion-label> -->
+      </ion-item>
+  
+      <ion-item >
+        <ion-item id=distime></ion-item>
+        <!-- <ion-label ></ion-label> -->
+      </ion-item>
+  
+    </ion-card>
+  
+  
+    <ion-card>
+      <ion-card-title>
+        <strong>Method</strong>
+      </ion-card-title>
+  
+    
+      <ion-item id=dismethod >
+        <!-- <ion-label ></ion-label> -->
+      </ion-item>
+  
+    </ion-card>
+  
+  
+    <ion-card>
+      <ion-card-title>
+        <strong>Issue</strong>
+      </ion-card-title>
+  
+  
+      <ion-item id=disissue><ion-label id=issuetag></ion-label>
+      </ion-item>
+  
+    </ion-card>
+  </div>
+  
+
+  
+
+
+
+</ion-content>

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar class='profilepage'>
+    <ion-title>EDIT PROFILE</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="coun-profile"></ion-back-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+  <form [formGroup]= newCNstaffidForm>
+   
+    <ion-card>
+      <ion-item>
+       <ion-item disabled>
+        Please entered the new staff ID:
+      </ion-item>
+      <input type=text id=restudID formControlName= newCNstaffid>
+       
+      </ion-item>
+      
+    </ion-card>
+  </form>
+
+    <ion-button type="submit" expand='block' color=tertiary size='medium' (click)=' updateCNstaffid()'>Update</ion-button>
+</ion-content>

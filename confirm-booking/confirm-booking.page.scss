@@ -1,0 +1,56 @@
+ion-title{
+    margin-top: 0px;
+  font-size: 20px;
+  color:#080808;
+  text-align:center;
+  font-weight: 900;
+
+}
+
+ion-card{
+    // display: flex;
+    // flex-direction: column;
+    width: 100%, !important;
+    margin: 0, !important;
+}
+ion-row{
+    align-items: center;
+    justify-content: center;
+}
+
+ion-card-title{
+    text-align:center;
+    margin-top:10px;
+    
+}
+
+.cancelbtn{
+    --ion-color-primary:#b72128;
+    width: 680px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  cursor: pointer;
+  text-align: center;
+  margin:auto;
+  margin-top:auto;
+  
+}
+
+.btn3{
+    
+    --ion-color-primary:#2a6fbe;
+    width: 680px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  cursor: pointer;
+  text-align: center;
+  margin:auto;
+  margin-top:auto;
+  
+}

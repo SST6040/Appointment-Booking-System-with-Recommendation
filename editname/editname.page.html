@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar class='profilepage'>
+    <ion-title>EDIT PROFILE</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="profile"></ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+  <form [formGroup]=newnameForm>
+   
+    <ion-card>
+      <ion-item>
+        <ion-item disabled>
+        Please entered the new name:
+      </ion-item>
+      <ion-item> 
+        <input type=text id=rename formControlName=newName>
+      </ion-item>
+      </ion-item>
+      
+     
+      
+    </ion-card>
+  </form>
+
+    <ion-button type="submit" expand='block' color=tertiary size='medium' (click)='updatename()'>Update</ion-button>
+</ion-content>

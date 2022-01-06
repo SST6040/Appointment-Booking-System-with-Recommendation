@@ -1,0 +1,33 @@
+
+<ion-header>
+  <ion-toolbar class='profilepage'>
+    <ion-title>EDIT PROFILE</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="profile"></ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+  <form [formGroup]=newSessionForm>
+   
+    <ion-card >
+      <ion-item disabled>
+        Please select new session:
+      </ion-item>
+    
+      <ion-select id='reselectsession' placeholder='You are more available during:' formControlName='newSession'>
+        <ion-select-option value='session-morning'>Morning</ion-select-option>
+        <ion-select-option value='session-afternoon'>Afternoon</ion-select-option>
+        </ion-select>
+    </ion-card>
+
+    
+  </form>
+
+    <ion-button type="submit" expand='block' color=tertiary size='medium' (click)=' updateSession()'>Update</ion-button>
+</ion-content>
+

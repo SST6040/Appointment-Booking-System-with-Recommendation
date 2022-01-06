@@ -1,0 +1,33 @@
+
+<ion-header>
+  <ion-toolbar class='profilepage'>
+    <ion-title>EDIT PROFILE</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="profile"></ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+  <form [formGroup]=newGenderForm>
+   
+    <ion-card >
+      <ion-item disabled>
+        Please select new gender:
+      </ion-item>
+    
+      <ion-select id='reselectgender'  placeholder='Select your gender' formControlName=newGender>
+      <ion-select-option value='female'>Female</ion-select-option>
+      <ion-select-option value='male'>Male</ion-select-option>
+      </ion-select>
+    </ion-card>
+
+    
+  </form>
+
+    <ion-button type="submit" expand='block' color=tertiary size='medium' (click)=' updateGender()'>Update</ion-button>
+</ion-content>
+
