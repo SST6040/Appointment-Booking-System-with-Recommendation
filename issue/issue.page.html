@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar class='bookingpage'>
+    <ion-title>BOOKING STEP 4 - TELL US YOUR ISSUE</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="select-datetime"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<h2 style="margin-left: 30px;text-align: center;"> </h2>
+<!--based on DEPRESSION -->
+<ion-content class=ion-padding>
+
+  <div >
+    <img class='imgdisplayed' style="float: right;" height=40% width=50% src = 'https://img.freepik.com/free-vector/business-woman-is-holding-her-hair-stress-during-work-hand-drawn-style-vector-design-illustrations_1150-39771.jpg?size=626&ext=jpg'>
+    <br>
+  <h1 style='text-align:left;justify-content: center;font-weight:900;font-size: 50px;margin-left: 30px;'>What we can help you?</h1>
+  <h3 style='font-family:Segoe UI,Tahoma, Geneva, Verdana, sans-serif;font-style : normal;text-align: left;margin-left: 30px;'>
+    To let us know you better, please select the issue you are facing:
+  
+  </h3>
+  </div>
+
+  <div class="ion-padding" style="float: left;width:700px">
+    <form [formGroup]='issueForm'>
+   
+      <ion-card >
+       <ion-radio-group formControlName='q1' >
+        
+         <ion-item id='10issue'>Depression
+          <ion-radio slot='start' id='dep' value=01></ion-radio>
+        </ion-item>
+     
+      
+       <ion-item id=20>Anxiety
+         <ion-radio slot='start' id='anx' value=02></ion-radio> 
+       </ion-item>
+     
+     
+       <ion-item id=30>Stress
+         <ion-radio slot='start' id='stress' value=03></ion-radio> 
+       </ion-item>
+     
+       <ion-item id=40>Relationship
+         <ion-radio slot='start' id='rel' value=04></ion-radio> 
+       </ion-item>
+     
+       <ion-item id=50>Other
+         <ion-radio slot='start' id='other' value=05></ion-radio> 
+       </ion-item>
+       
+     
+       </ion-radio-group>
+     </ion-card>
+     </form>
+ 
+       <ion-button  color='primary' expand='block' fill=solid style='color: black;' [disabled]='!issueForm.valid' (click)='getIssue()'  >
+         Submit
+       </ion-button>
+  </div>
+
+
+</ion-content>
+

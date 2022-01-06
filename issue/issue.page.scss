@@ -1,0 +1,25 @@
+ion-title{
+    margin-top: 0px;
+  font-size: 20px;
+  color:#080808;
+  text-align:center;
+  font-weight: 900;
+
+}
+
+ion-card{
+    // display: flex;
+    // flex-direction: column;
+    width: 100%, !important;
+    margin: 0, !important;
+}
+ion-row{
+    align-items: center;
+    justify-content: center;
+}
+
+ion-card-title{
+    text-align:center;
+    margin-top:10px;
+    
+}

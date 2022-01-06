@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>REGISTER AS COUNSELLOR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class=ion-padding>
+  <form [formGroup]='counForm'>
+    <ion-item lines="full">
+      <ion-label position="floating">Name</ion-label>
+      <ion-input id=name type="text" formControlName='name' ></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input id=email type="text" formControlName='email'></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input id=password type="password" formControlName='password'></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Staff ID</ion-label>
+      <ion-input id=staffID type="text" formControlName='staffID'></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Phone</ion-label>
+      <ion-input id=phone type="number" formControlName='phone'></ion-input>
+    </ion-item>
+
+    
+
+    <ion-item lines="full">
+      <ion-select id='ethnicity' placeholder='Select your ethnicity' formControlName='ethnicity'>
+        <!-- <option *ngFor='let c of gender' [ngValue]=c>{{c}}</option> -->
+        <ion-select-option value='Chinese'>Chinese</ion-select-option>
+        <ion-select-option value='Malay'>Malay</ion-select-option>
+        <ion-select-option value='Indian'>Indian</ion-select-option>
+        <ion-select-option value='other'>Other</ion-select-option>
+      </ion-select>
+
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-select id='gender' placeholder='Select your gender' formControlName='gender'>
+        <!-- <option *ngFor='let c of gender' [ngValue]=c>{{c}}</option> -->
+      <ion-select-option value='female'>Female</ion-select-option>
+      <ion-select-option value='male'>Male</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    
+
+    
+    <ion-button class='createbtn' type="submit" expand="block" (click)='createCounsellor()' [disabled]='!counForm.valid'>Create Now</ion-button>
+      
+    
+  </form>
+</ion-content>

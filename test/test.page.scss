@@ -1,0 +1,22 @@
+ion-title{
+    margin-top: 0px;
+  font-size: 20px;
+  color:#080808;
+  text-align:center;
+  font-weight: 900;
+
+}
+.container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    
+    transform: translateY(-50%);
+    background-color: rgb(73, 181, 214);
+  }
+
+.odd{
+    --ion-background-color: #fcdcb1; 
+}

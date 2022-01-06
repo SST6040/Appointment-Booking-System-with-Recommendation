@@ -1,0 +1,355 @@
+<ion-header>
+  <ion-toolbar class='bookingpage'>
+    <ion-title>BOOKING STEP 1 - MENTAL WELLNESS TEST</ion-title>
+
+    <ion-buttons color=dark slot='start' (click)='GotoHome()'>
+      <ion-button >
+        HOME
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content class=ion-padding>
+
+  <div >
+    <h2 style="margin-left: 30px;text-align: center;">This test is just a simple test for system to suggest the suitable counsellor for you.</h2>
+
+    
+  </div>
+  <br>
+
+  <form [formGroup]='userTestForm'>
+    
+    <ion-card class='odd'>
+      
+      <ion-radio-group formControlName='q1' >
+        <ion-card-header>
+          <strong>Question1 : Little interest or pleasure in doing things? </strong>
+        </ion-card-header>
+
+        <ion-card-content>
+          
+          <ion-item>
+            <ion-label >Not at all
+              
+            </ion-label>
+            <ion-radio slot='start' id='val-no' value=0></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Several days
+            </ion-label>
+            <ion-radio slot='start' id='val-sev' value=1></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>More than half the days
+            </ion-label>
+            <ion-radio slot='start' id='val-half' value='2'></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Nearly every day
+            </ion-label>
+            <ion-radio slot='start' id='val-every' value='3'></ion-radio>
+          </ion-item>
+
+        </ion-card-content>
+      </ion-radio-group>
+    </ion-card>
+
+
+    <ion-card>
+      <ion-radio-group formControlName='q2' >
+        <ion-card-header>
+          <strong>Question 2: Feeling down, depressed, or hopeless? </strong>
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-item>
+            <ion-label>Not at all
+            </ion-label>
+            <ion-radio slot='start' id='val-no' value=0></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Several days
+            </ion-label>
+            <ion-radio slot='start' id='val-sev' value=1></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>More than half the days
+            </ion-label>
+            <ion-radio slot='start' id='val-half' value='2'></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Nearly every day
+            </ion-label>
+            <ion-radio slot='start' id='val-every' value='3'></ion-radio>
+          </ion-item>
+
+        </ion-card-content>
+      </ion-radio-group>
+    </ion-card>
+
+    <ion-card class='odd'>
+      <ion-radio-group formControlName='q3' >
+        <ion-card-header>
+          <strong>Question 3: Trouble falling or staying asleep, or sleeping too much? </strong>
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-item>
+            <ion-label>Not at all
+            </ion-label>
+            <ion-radio slot='start' id='val-no' value=0></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Several days
+            </ion-label>
+            <ion-radio slot='start' id='val-sev' value=1></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>More than half the days
+            </ion-label>
+            <ion-radio slot='start' id='val-half' value='2'></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Nearly every day
+            </ion-label>
+            <ion-radio slot='start' id='val-every' value='3'></ion-radio>
+          </ion-item>
+
+        </ion-card-content>
+      </ion-radio-group>
+    </ion-card>
+
+    <ion-card>
+      <ion-radio-group formControlName='q4' >
+        <ion-card-header>
+          <strong>Question 4: Feeling tired or having little energy? </strong>
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-item>
+            <ion-label>Not at all
+            </ion-label>
+            <ion-radio slot='start' id='val-no' value=0></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Several days
+            </ion-label>
+            <ion-radio slot='start' id='val-sev' value=1></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>More than half the days
+            </ion-label>
+            <ion-radio slot='start' id='val-half' value='2'></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Nearly every day
+            </ion-label>
+            <ion-radio slot='start' id='val-every' value='3'></ion-radio>
+          </ion-item>
+
+        </ion-card-content>
+      </ion-radio-group>
+    </ion-card>
+
+    <ion-card class='odd'>
+      <ion-radio-group formControlName='q5' >
+        <ion-card-header>
+          <strong>Question 5: Poor appetite or overeating? </strong>
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-item>
+            <ion-label>Not at all
+            </ion-label>
+            <ion-radio slot='start' id='val-no' value=0></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Several days
+            </ion-label>
+            <ion-radio slot='start' id='val-sev' value=1></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>More than half the days
+            </ion-label>
+            <ion-radio slot='start' id='val-half' value='2'></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Nearly every day
+            </ion-label>
+            <ion-radio slot='start' id='val-every' value='3'></ion-radio>
+          </ion-item>
+
+        </ion-card-content>
+      </ion-radio-group>
+    </ion-card>
+
+
+    <ion-card >
+      <ion-radio-group formControlName='q6' >
+        <ion-card-header>
+          <strong>Question 6: Feeling bad about yourself — or that you are a failure or have let yourself or your family down? </strong>
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-item>
+            <ion-label>Not at all
+            </ion-label>
+            <ion-radio slot='start' id='val-no' value=0></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Several days
+            </ion-label>
+            <ion-radio slot='start' id='val-sev' value=1></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>More than half the days
+            </ion-label>
+            <ion-radio slot='start' id='val-half' value='2'></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Nearly every day
+            </ion-label>
+            <ion-radio slot='start' id='val-every' value='3'></ion-radio>
+          </ion-item>
+
+        </ion-card-content>
+      </ion-radio-group>
+    </ion-card>
+  
+
+  
+  <ion-card class='odd'>
+    <ion-radio-group formControlName='q7' >
+      <ion-card-header>
+        <strong>Question 7: Trouble concentrating on things, such as reading the newspaper or watching television? </strong>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-item>
+          <ion-label>Not at all
+          </ion-label>
+          <ion-radio slot='start' id='val-no' value=0></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Several days
+          </ion-label>
+          <ion-radio slot='start' id='val-sev' value=1></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>More than half the days
+          </ion-label>
+          <ion-radio slot='start' id='val-half' value='2'></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Nearly every day
+          </ion-label>
+          <ion-radio slot='start' id='val-every' value='3'></ion-radio>
+        </ion-item>
+
+      </ion-card-content>
+    </ion-radio-group>
+  </ion-card>
+
+
+
+  <ion-card>
+    <ion-radio-group formControlName='q8' >
+      <ion-card-header>
+        <strong>Question 8: Moving or speaking so slowly that other people could have noticed? Or so fidgety or restless that you have been moving a lot more than usual? </strong>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-item>
+          <ion-label>Not at all
+          </ion-label>
+          <ion-radio slot='start' id='val-no' value=0></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Several days
+          </ion-label>
+          <ion-radio slot='start' id='val-sev' value=1></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>More than half the days
+          </ion-label>
+          <ion-radio slot='start' id='val-half' value='2'></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Nearly every day
+          </ion-label>
+          <ion-radio slot='start' id='val-every' value='3'></ion-radio>
+        </ion-item>
+
+      </ion-card-content>
+    </ion-radio-group>
+  </ion-card>
+
+
+  <ion-card class='odd'>
+    <ion-radio-group formControlName='q9' >
+      <ion-card-header>
+        <strong>Question 9: Thoughts that you would be better off dead, or thoughts of hurting yourself in some way? </strong>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-item>
+          <ion-label>Not at all
+          </ion-label>
+          <ion-radio slot='start' id='val-no' value=0></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Several days
+          </ion-label>
+          <ion-radio slot='start' id='val-sev' value=1></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>More than half the days
+          </ion-label>
+          <ion-radio slot='start' id='val-half' value='2'></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Nearly every day
+          </ion-label>
+          <ion-radio slot='start' id='val-every' value='3'></ion-radio>
+        </ion-item>
+
+      </ion-card-content>
+    </ion-radio-group>
+  </ion-card>
+
+  <ion-button  type="submit" expand="block" size='medium' [disabled]='!userTestForm.valid' (click)='submitTest()' >Submit</ion-button>
+      
+  </form>
+</ion-content>

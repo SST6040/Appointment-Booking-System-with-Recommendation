@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>REGISTER AS STUDENT</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class=ion-padding>
+  <form [formGroup]='userprofileForm'>
+    <ion-item lines="full">
+      <ion-label position="floating">Name</ion-label>
+      <ion-input id=name type="text" formControlName='name' ></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input id=email type="text" formControlName='email'></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input id=password type="password" formControlName='password'></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Student ID</ion-label>
+      <ion-input id=studID type="text" formControlName='studID'></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Phone</ion-label>
+      <ion-input id=phone type="number" formControlName='phone'></ion-input>
+    </ion-item>
+
+    
+
+    <ion-item lines="full">
+      <ion-select id='ethnicity' placeholder='Select your ethnicity' formControlName='ethnicity'>
+        <!-- <option *ngFor='let c of gender' [ngValue]=c>{{c}}</option> -->
+        <ion-select-option value='Chinese'>Chinese</ion-select-option>
+        <ion-select-option value='Malay'>Malay</ion-select-option>
+        <ion-select-option value='Indian'>Indian</ion-select-option>
+        <ion-select-option value='other'>Other</ion-select-option>
+      </ion-select>
+
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-select id='gender' placeholder='Select your gender' formControlName='gender'>
+        <!-- <option *ngFor='let c of gender' [ngValue]=c>{{c}}</option> -->
+      <ion-select-option value='female'>Female</ion-select-option>
+      <ion-select-option value='male'>Male</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-select id='preflang' placeholder='You feel comfortable when talking in:' formControlName='preflang'>
+      <ion-select-option value='langmalay'>Malay</ion-select-option>
+      <ion-select-option value='langenglish'>English</ion-select-option>
+      <ion-select-option value='langchinese'>Chinese</ion-select-option>
+      </ion-select>
+    </ion-item>
+    
+    <ion-item lines="full">
+      <ion-select id='session' placeholder='You are more available during:' formControlName='session'>
+      <ion-select-option value='session-morning'>Morning</ion-select-option>
+      <ion-select-option value='session-afternoon'>Afternoon</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-select id='method' placeholder='You are more comfortable to communicate in:' formControlName='method'>
+      <ion-select-option value='video-call'>Video-call</ion-select-option>
+      <ion-select-option value='voice-call'>Voice-call</ion-select-option>
+      <ion-select-option value='text-message'>Text-message</ion-select-option>
+
+      </ion-select>
+    </ion-item>
+
+    
+    <ion-button class='createbtn' type="submit" expand="block" (click)='createUser()' [disabled]='!userprofileForm.valid'>Create Now</ion-button>
+      
+    
+  </form>
+</ion-content>

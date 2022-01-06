@@ -1,0 +1,112 @@
+<ion-header>
+  <ion-toolbar class='bookingpage'>
+    
+    
+    <ion-title>BOOKING STEP 3 - CHOOSE DATE, TIME AND METHOD</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="select-counsellor"></ion-back-button>
+    </ion-buttons>
+    
+    
+  </ion-toolbar>
+</ion-header>
+
+<!--based on session, limit -->
+<ion-content class=ion-padding>
+
+<div style="float:left;width:900px">
+  <!-- <h2 style="margin-left: 30px;text-align: center;">Please select your available date and time, and preferred method of counselling </h2>
+  <br> -->
+  
+    <ion-card >
+      <ion-card-header>Please select the suitable time</ion-card-header>
+      
+  
+      <ion-item>
+        <ion-label >Select Date</ion-label>
+      
+        <ion-datetime size='large' id=date  displayFormat="YYYY-MMM-DD" ></ion-datetime>
+      </ion-item>
+      <br>
+  
+    </ion-card>
+  
+    <ion-card>
+      <ion-card-header>Please select the suitable time</ion-card-header>
+      
+      <ion-item>
+        <ion-label >Select Time</ion-label>
+        <ion-datetime size='large' id=time min='08:00' max='16:00' displayFormat="HH:mm" [(ngModel)]='myDate' minuteValues='0,30'></ion-datetime>    
+      </ion-item>
+      <ion-item>
+        <ion-row id=suggestedtimerow style="display: none;">
+          <ion-col>
+            <ion-label style="font-style:italic">Seem like you are often choosing this session. Click the button below if you want to choose it again.</ion-label>
+            <ion-button id=suggestT (click)=chooseSuggestedTime()></ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+    </ion-card>
+  
+  <form [formGroup]='methodForm'>
+     
+    <ion-card >
+  
+     <ion-radio-group formControlName='q11' >
+      <ion-card-header>Please select your preferred method</ion-card-header>
+      
+      <ion-item >
+        <ion-item id=suggested></ion-item>
+        <ion-radio slot='start' id='rb1' value=suggested></ion-radio>
+      </ion-item>
+   
+    
+     <ion-item >
+      <ion-item id=11></ion-item>
+       <ion-radio slot='start' id='rb2' value=11></ion-radio> 
+     </ion-item>
+   
+   
+     <ion-item >
+      <ion-item id=12></ion-item>
+       <ion-radio slot='start' id='rb3' value=12></ion-radio> 
+     </ion-item>
+   
+   
+   
+    
+     
+   
+     </ion-radio-group>
+   </ion-card>
+   </form>
+</div>
+  
+ 
+
+<div style="margin-left:30px;float:left;width:700px;" >
+  <img class='imgdisplayed' style="float: right;" height=50% width=50% src = 'https://img.freepik.com/free-vector/online-therapy-counselling-stress-depression_186332-409.jpg?size=626&ext=jpg'>
+
+        <br>
+
+
+        <h1 style='text-align:left;justify-content: center;font-weight:900;font-size: 50px;'>Choose your preferred date, time and method.</h1>
+        <h3 style='font-family:Segoe UI,Tahoma, Geneva, Verdana, sans-serif;font-style : normal;text-align: left;'>
+        Please select your preferred date, time and method. You can check the availability now!
+
+        </h3>
+        <br>
+
+  <ion-button style=height:50px color='warning' type="submit" id=checkava expand='block' [disabled]='!methodForm.valid' (click)='GetDateTime()'>
+  Check for Availability
+</ion-button>
+
+<ion-button  style=height:50px type="submit" id=proceed expand='block' disabled (click)='ProceedBooking()'>
+  Confirm
+</ion-button>
+</div>
+
+  
+ 
+
+</ion-content>

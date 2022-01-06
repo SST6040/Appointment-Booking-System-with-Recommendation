@@ -1,0 +1,228 @@
+
+<ion-header>
+  <ion-toolbar class='bookingpage'>
+    <ion-title>BOOKING STEP 2 - CHOOSE COUNSELLOR</ion-title>
+
+    <ion-buttons slot='start' (click)='GotoHome()'>
+      <ion-button >
+        HOME
+      </ion-button>
+
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<!-- <ion-content>
+
+  <ion-card class='suggested'>
+    <ion-card-title style=text-align:center;margin-top:10px><strong>SUGGESTED</strong></ion-card-title>
+    <ion-item>
+      <ion-label id='suggestedName'></ion-label>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label id='suggestedEmail'></ion-label>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label id='suggestedGender'></ion-label>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label id='suggestedEthnicity'></ion-label>
+      
+    </ion-item>
+
+    <ion-item>
+      <ion-button id="selectC1" class='suggested' slot='end' expand='block' fill='outline' shape=round size=default (click)=ChooseCounsellor1()>Select</ion-button>
+    </ion-item>
+    
+  </ion-card>
+
+counsellor 2-->
+  <!-- <ion-card >
+    
+    <ion-item id='suggestedName2'>
+      <ion-label ></ion-label>
+    </ion-item>
+  
+    <ion-item id='suggestedEmail2'>
+      <ion-label ></ion-label>
+    </ion-item>
+  
+    <ion-item id='suggestedGender2'>
+      <ion-label ></ion-label>
+    </ion-item>
+  
+    <ion-item id='suggestedEthnicity2'>
+      <ion-label ></ion-label>
+      
+    </ion-item>
+
+    <ion-item>
+      <ion-button id="selectC2" slot='end' expand='block' fill='outline' shape=round size=default (click)=ChooseCounsellor2()>Select</ion-button>
+    </ion-item>
+    
+  </ion-card> -->
+   
+<!--counsellor 3-->
+<!-- <ion-card >
+    
+  <ion-item>
+    <ion-label id='suggestedName3'></ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label id='suggestedEmail3'></ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label id='suggestedGender3'></ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label id='suggestedEthnicity3'></ion-label>
+    
+  </ion-item>
+
+  <ion-item>
+    <ion-button id="selectC3" slot='end' expand='block' fill='outline' shape=round size=default (click)=ChooseCounsellor3() >Select</ion-button>
+  </ion-item>
+  
+</ion-card> -->
+
+<!--counsellor 4-->
+<!-- <ion-card >
+    
+  <ion-item>
+    <ion-label id='suggestedName4'></ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label id='suggestedEmail4'></ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label id='suggestedGender4'></ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label id='suggestedEthnicity4'></ion-label>
+    
+  </ion-item>
+
+  <ion-item>
+    <ion-button id="selectC4" slot='end' expand='block' fill='outline' shape=round size=default (click)=ChooseCounsellor4()>Select</ion-button>
+  </ion-item>
+  
+</ion-card>
+     -->
+<!--counsellor 5-->
+<!-- <ion-card >
+    
+  <ion-item>
+    <ion-label id='suggestedName5'></ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label id='suggestedEmail5'></ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label id='suggestedGender5'></ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label id='suggestedEthnicity5'></ion-label>
+    
+  </ion-item>
+
+  <ion-item>
+    <ion-button id="selectC5" slot='end' expand='block' fill='outline' shape=round size=default (click)=ChooseCounsellor5()>Select</ion-button>
+  </ion-item>
+  
+</ion-card>
+</ion-content> --> 
+
+<ion-content class=ion-padding>
+
+  <ion-item-group id='displayCounAreaB'  class=centerized style=display:block>
+    
+    <br>
+
+    
+  <!-- <img class='imgdisplayed' height='flex' width='flex' src = 'https://utpmerchandise.com/image/cache/catalog/journal3/logo/utp-retina-logo-555-555x219.png'> -->
+
+  <div>
+  <img class='imgdisplayed' style="float: right;" height=50% width=50% src = 'https://img.freepik.com/free-vector/female-patient-with-psychologist-psychotherapist-sitting-sofa-psychotherapy-session-mental-health-depression-flat-illustration_106299-70.jpg?size=626&ext=jpg'>
+
+  <br>
+
+
+<h1 style='text-align:left;justify-content: center;font-weight:900;font-size: 50px;'>Let us know you better!</h1>
+<h3 style='font-family:Segoe UI,Tahoma, Geneva, Verdana, sans-serif;font-style : normal;text-align: left;'>
+To provide a better recommendation for you, please select which type of booking experience you have:
+
+</h3>
+</div>
+
+    
+  <div class="ion-padding" style="float: left;">
+    <ion-button expand='block'  style=display:block class='btn' fill='solid'(click)=displayGenEthnCalc()>First time booking</ion-button>
+      <br>
+    <ion-button expand='block'  style=display:block class='btn2' fill='solid'(click)=displayHistoryCalc()>Not First time booking</ion-button>
+  </div>
+  </ion-item-group>
+
+
+  
+  <h3 id=couninstruction class=couninstruct style='font-family:Segoe UI,Tahoma, Geneva, Verdana, sans-serif;font-style : normal;text-align: left;'> </h3>
+  
+  <ion-item-group  id='displayCounArea' class="ion-padding" style="float: left;width:900px" >
+    
+  </ion-item-group>
+
+ 
+  <ion-item-group id=selectCounArea style=display:none;>
+    <div style=float:left;width:700px;>
+    <form [formGroup]=counsellorSelectForm>
+     
+       <img class='imgdisplayed' style="float: right;" height=50% width=50% src = 'https://img.freepik.com/free-vector/online-therapy-counselling-stress-depression_186332-409.jpg?size=626&ext=jpg'>
+
+        <br>
+
+
+        <h1 style='text-align:left;justify-content: center;font-weight:900;font-size: 50px;'>Choose your counsellor!</h1>
+        <h3 style='font-family:Segoe UI,Tahoma, Geneva, Verdana, sans-serif;font-style : normal;text-align: left;'>
+        Please select your preferred counsellor at below. 
+
+        </h3>
+        <br>
+
+        <ion-card >
+        <ion-list style="background-color:moccasin" >
+        
+        <ion-label style="font-size: medium;margin-left: 15px;color:black">Select one counsellor</ion-label>
+        <ion-select id=Cselect  style="color:black;height:70px;width: flex;" placeholder="Select One" formControlName='selectC'>
+          
+        </ion-select>
+      </ion-list>
+
+     
+      </ion-card>
+      <ion-button  expand='block' class="btn3" style=display:block; fill='solid' (click)=submitCounsellor()>SUBMIT</ion-button>
+
+    
+    </form>
+  </div>
+
+   </ion-item-group>
+    
+  
+
+</ion-content>
+
+
+
+
+

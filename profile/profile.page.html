@@ -1,0 +1,163 @@
+<ion-header>
+  <ion-toolbar class='profilepage'>
+    <ion-title>PROFILE</ion-title>
+
+    <ion-buttons slot='start' (click)='GotoHome()'>
+      <ion-button style=color:white>
+        HOME
+      </ion-button>
+
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content class=ion-padding>
+
+  <div style="margin-left: 15px;">
+    <!-- <img class='imgdisplayed' height='flex' width='flex' src = 'https://utpmerchandise.com/image/cache/catalog/journal3/logo/utp-retina-logo-555-555x219.png'> -->
+  
+    <img class='imgdisplayed' style="float: right;margin-top: 120px;" height=40% width=40% src = 'https://media.istockphoto.com/vectors/interface-customization-concept-vector-id1352039298?b=1&k=20&m=1352039298&s=612x612&w=0&h=qJWPRLfPiJwf63rg2yHOUGdg4UUxS0WjZoEPDZzqKRQ='>
+  
+    
+  </div>
+
+
+
+  
+    
+    
+<div style="float:left;margin-left: 30px;width:700px">
+  <h1 style='text-align:left;justify-content: center;font-weight:900;font-size: 50px;'>Edit your profile!</h1>
+  <h3 style='font-family:Segoe UI,Tahoma, Geneva, Verdana, sans-serif;font-style : normal;text-align: left;'>
+    Please refresh the page after update your profile:
+
+  </h3>
+  <br>
+  <ion-card >
+    <ion-item class="profilecard">
+      <ion-item disabled>
+        Email
+      </ion-item>
+      <ion-label id=uemail>
+      </ion-label>
+    </ion-item>
+  </ion-card> 
+  
+  
+  <ion-card id=profsession>
+    <ion-item  class="profilecard2">
+      <ion-item disabled>
+        Mental Wellness Testmark
+      </ion-item>
+      <ion-label id='utestmark'>    
+      </ion-label>   
+      </ion-item>
+  </ion-card>
+
+  <ion-card >
+    <ion-item class="profilecard">
+      <ion-item disabled>
+        Name
+      </ion-item>
+      <ion-label id=uname>
+      </ion-label>
+      <ion-item>
+        <ion-icon style=color:tomato slot=end name="create" (click)=editname()></ion-icon>
+      </ion-item> 
+    </ion-item>
+  </ion-card>
+
+
+<ion-card>
+
+ 
+ 
+  <ion-item class="profilecard2"> 
+    <ion-item disabled>
+      Student ID:
+    </ion-item><ion-label id=ustudid>
+    </ion-label>  
+    <ion-item>
+      <ion-icon style=color:tomato slot=end name="create" (click)=editstudid()></ion-icon>
+    </ion-item> 
+  </ion-item>
+</ion-card>
+
+
+<ion-card>
+  <ion-item class="profilecard2">
+    <ion-item disabled>
+      Gender
+    </ion-item>
+    <ion-label id="ugender"> 
+    </ion-label>  
+    <ion-item>
+      <ion-icon style=color:tomato slot=end name="create" (click)=editgender()></ion-icon>
+    </ion-item> 
+  </ion-item>
+</ion-card>
+
+<ion-card>
+  <ion-item class="profilecard">
+    <ion-item disabled>
+      Ethnicity
+    </ion-item> 
+    <ion-label id="uethn">
+    </ion-label>  
+    <ion-item>
+      <ion-icon style=color:tomato slot=end name="create" (click)=editethn()></ion-icon>
+    </ion-item> 
+  </ion-item>
+</ion-card>
+
+<ion-card>
+  <ion-item class="profilecard2">
+    <ion-item disabled>
+      Preferred Method
+    </ion-item> <ion-label id='umethod'>  
+    </ion-label>   
+    <ion-item>
+      <ion-icon style=color:tomato slot=end name="create" (click)=editmethod()></ion-icon>
+    </ion-item>
+  </ion-item>
+</ion-card>
+
+<ion-card>
+  <ion-item class="profilecard">
+    <ion-item disabled>
+      Phone
+    </ion-item>
+    <ion-label id='uphone'>
+    </ion-label>   
+    <ion-item>
+      <ion-icon style=color:tomato slot=end name="create" (click)=editphone()></ion-icon>
+    </ion-item>
+  </ion-item>
+</ion-card>
+
+<ion-card id=profsession>
+  <ion-item  class="profilecard2">
+    <ion-item disabled>
+      Preferred Session
+    </ion-item>
+    <ion-label id='usession'>    
+    </ion-label>   
+    <ion-item>
+      <ion-icon style=color:tomato slot=end name="create" (click)=editsession()></ion-icon>
+    </ion-item>
+  </ion-item>
+</ion-card>
+</div>
+    
+  
+
+
+
+<!-- <ion-button type="submit" expand='block' size='medium' (click)='Edit()' >Update</ion-button> -->
+
+
+</ion-content>
+
